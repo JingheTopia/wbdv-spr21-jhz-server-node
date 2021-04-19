@@ -19,6 +19,7 @@ app.use(session({
     // cookie: { secure: true }
 }))
 
+app.use(express.static('./',{lastModified:true}))
 
 // Configure CORS
 app.use(function (req, res, next) {
