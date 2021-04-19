@@ -1,5 +1,5 @@
 module.exports = (app) => {
-     const usersModel = require("../db/users/users-model")
+     const usersModel = require("../models/users/users-model")
 
     const register = (req, res) => {
         const user = req.body;
